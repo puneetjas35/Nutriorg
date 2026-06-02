@@ -47,13 +47,14 @@ Run the application:
 
 # Backend
 cd server
-npm run dev
+node server.js
 
 # Frontend
 cd client
 npm run dev
-Author
 
+
+Author
 Puneet
 
 GitHub: https://github.com/puneetjas35
