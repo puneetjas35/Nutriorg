@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  display: block;
+}
+
+/* ONLY Detox section swiper arrows */
+.main_detox_section .swiper-button-next,
+.main_detox_section .swiper-button-prev {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  top: 45%;
+  color: #6a5b5c;
+}
+
+/* Arrow icon */
+.main_detox_section .swiper-button-next::after,
+.main_detox_section .swiper-button-prev::after {
+  font-size: 14px;
+  color: #6a5b5c;
+  font-weight: bold;
+}
+
+/* Position outside */
+.main_detox_section .swiper-button-prev {
+  left: -10px;
+}
+
+.main_detox_section .swiper-button-next {
+  right: -10px;
+}
+
+/* Optional: hide on mobile */
+@media (max-width: 640px) {
+
+  .main_detox_section .swiper-button-next,
+  .main_detox_section .swiper-button-prev {
+    display: none;
+  }
+}
+
+/* .product_title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+
+  line-clamp: 2;
+  /* standard property */
+  /* overflow: hidden; */
+/* }  */
+
+.main_detox_section .swiper-wrapper {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+  align-items: stretch;
+}
+
+.main_detox_section .swiper-slide {
+  height: auto;
+  display: flex;
+}
+
