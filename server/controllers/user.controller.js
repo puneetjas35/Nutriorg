@@ -152,13 +152,14 @@ export async function loginController(request, response) {
         const refreshToken = await generateRefreshToken(user._id)
         
         const updateUser = await UserModel.findByIdAndUpdate(user?._id,{
+            
             last_login_date : new Date()
         })
 
         const cookiesOption = {
             httpOnly: true,
-            secure: false,
-            sameSite: "lax"
+            secure: true,
+            sameSite: "none"
         }
 
         response.cookie('accessToken', accessToken, cookiesOption)
@@ -190,8 +191,8 @@ export async function logoutController(request, response) {
         const userid = request.userId //middleware
         const cookiesOption = {
             httpOnly: true,
-            secure: false,
-            sameSite: "lax"
+            secure: true,
+            sameSite: "none"
         }
         response.clearCookie("accessToken", cookiesOption)
         response.clearCookie("refreshToken", cookiesOption)
@@ -497,8 +498,8 @@ export async function refreshToken(request, response) {
 
         const cookiesOption = {
             httpOnly: true,
-            secure: false,
-            sameSite: "lax"
+            secure: true,
+            sameSite: "none"
         }
         response.cookie('accessToken', newAccessToken, cookiesOption)
 
