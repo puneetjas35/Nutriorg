@@ -4,23 +4,34 @@ const auth = async (request, response, next) => {
   try {
     let token = request.cookies?.accessToken;
 
-    // fallback to Authorization header
     const authHeader = request.headers?.authorization;
-    if (!token && authHeader && authHeader.startsWith("Bearer ")) {
+    if (!token && authHeader?.startsWith("Bearer ")) {
       token = authHeader.split(" ")[1];
     }
 
-    // If token is missing, throw an error to jump to catch block
-    if (!token) throw new Error("No token provided");
+    console.log("TOKEN:", token);
 
-    const decode = jwt.verify(token, process.env.SECRET_KEY_ACCESS_TOKEN);
-     console.log("DECODED TOKEN:", decode)
+    if (!token) {
+      return response.status(401).json({
+        message: "No token provided"
+      });
+    }
+
+    const decode = jwt.verify(
+      token,
+      process.env.SECRET_KEY_ACCESS_TOKEN
+    );
+
+    console.log("DECODED TOKEN:", decode);
+
     request.userId = decode.id;
-    next(); 
+    next();
 
   } catch (error) {
-    return response.status(500).json({
-      message: "You have not logged in",
+    console.log("AUTH ERROR:", error);
+
+    return response.status(401).json({
+      message: error.message,
       error: true,
       success: false
     });
