@@ -134,11 +134,11 @@ const Navbar = ({ searchRef }) => {
       </div>
 
       {/* Main navbar */}
-      <div className="bg-[#174733] text-white w-full min-h-[70px] md:h-[87.5px] flex items-center">
+      <div className="bg-[#174733] text-white w-full py-3 md:py-4">
         <div className="flex items-center justify-between w-full px-3 md:px-6 lg:px-8 py-2 relative">
 
           {/* Search */}
-          <div className="flex relative items-center space-x-0 ml-[0.3em]">
+          <div className="hidden md:flex relative items-center space-x-0 ml-[0.3em]">
             <input
               ref={searchRef}
               type="text"
@@ -171,7 +171,7 @@ const Navbar = ({ searchRef }) => {
           </div>
 
           {/* Logo */}
-          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
             <img
               src="https://nutriorg.com/cdn/shop/files/Capture2_270x.png?v=1646817909"
               alt="Nutriorg Logo"
@@ -192,7 +192,7 @@ const Navbar = ({ searchRef }) => {
               user?._id ? (
                 <div className='relative'>
                   <div onClick={() => setOpenUserMenu(preve => !preve)} className="flex select-none items-center cursor-pointer">
-                    <p className='text-[16px]'>Account</p>
+                    <p className='hidden md:block text-[16px]'>Account</p>
                     {
                       openUserMenu ? (
                         <GoTriangleUp size={20} />
@@ -221,7 +221,7 @@ const Navbar = ({ searchRef }) => {
                 />
               )
             }
-            <div className='carticon border bg-[#5c8018] p-1 rounded-lg' onClick={() => setOpenCartSection(true)}>
+            <div className='carticon border bg-[#5c8018] p-1 md:p-2 rounded-lg' onClick={() => setOpenCartSection(true)}>
               {
                 cartItem[0] ? (
                   <div className='leading-3'>
@@ -229,7 +229,7 @@ const Navbar = ({ searchRef }) => {
                       <span><MdOutlineShoppingCart className="hover:text-[#89c21e]" /></span><p className='text-[12px]'>{totalQty} Items</p>
                     </div>
 
-                    <p className='text-[12px]'>{DisplayPriceInRupees(totalPrice)}</p>
+                    <p className='hidden md:block text-[12px]'>{DisplayPriceInRupees(totalPrice)}</p>
                   </div>
                 ) : (
                   <MdOutlineShoppingCart className="hover:text-[#89c21e]" />
@@ -242,10 +242,26 @@ const Navbar = ({ searchRef }) => {
       </div>
 
       {/* Mobile Menu */}
-{
-  mobileMenu && (
-    <div className="md:hidden bg-white shadow-lg">
-      <ul className="flex flex-col text-black">
+{mobileMenu && (
+  <div className="md:hidden bg-white shadow-lg">
+
+    {/* Mobile Search */}
+    <div className="p-3 border-b">
+      <div className="flex">
+        <input
+          type="text"
+          placeholder="Search products..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          className="flex-1 border rounded-l-md p-2 text-black"
+        />
+        <button className="bg-[#89c21e] px-3 rounded-r-md">
+          <HiMiniMagnifyingGlass className="text-white" />
+        </button>
+      </div>
+    </div>
+
+    <ul className="flex flex-col text-black">
 
         <li className="p-3 border-b">
           <Link
@@ -300,7 +316,7 @@ const Navbar = ({ searchRef }) => {
 
       {/*Navbar list*/}
       <div className='relative  overflow-visible z-50 mt-3 cursor-pointer font-arimo'>
-        <ul className='hidden md:flex items-center justify-center gap-7'>
+        <ul className='hidden lg:flex items-center justify-center gap-4 xl:gap-7'>
           <li><Link to="/">Home</Link></li>
           <li className="group flex items-center justify-center">
             Shop
