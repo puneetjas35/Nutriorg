@@ -51,7 +51,6 @@ const ShopCategory = () => {
     <section className='border-top collection-section py-4 overflow-visible'>
       <div className='flex items-center justify-between'>
         <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY</h2>
-        <a href="" className="text-[17px] mr-8 font-[Montserrat,sans-serif] text-[#A18E96] underline underline-offset-4">View all</a>
       </div>
       <div>
         <div className="relative max-w-6xl mx-auto pl-7">
