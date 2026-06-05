@@ -59,7 +59,8 @@ const Profile = () => {
         }
       )
 
-      dispatch(setUserDetails(response.data.data))
+      const latestUser = await fetchUserDetails()
+      dispatch(setUserDetails(latestUser.data.data))
     } catch (error) {
       console.log(error)
     }
@@ -79,7 +80,7 @@ const Profile = () => {
       if(responseData.success){
            toast.success(responseData.message)
            const userData = await fetchUserDetails()
-           dispatch(setUserDetails(userData.data))
+           dispatch(setUserDetails(userData.data.data))
       }
       
     } catch (error) {
