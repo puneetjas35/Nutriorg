@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom"
 import { DisplayPriceInRupees } from './utils/DisplayPriceInRupees';
 import { useGlobalContext } from './provider/GlobalProvider';
 import Axios from "./utils/Axios"
+import { Menu, X } from "lucide-react";
 import DisplayCartItem from './DisplayCartItem';
 
 // import { set } from 'mongoose';
@@ -22,6 +23,7 @@ const Navbar = ({ searchRef }) => {
   const cartItem = useSelector(state => state.cartItem.cart)
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const { totalPrice, totalQty } = useGlobalContext()
   const [openCartSection, setOpenCartSection] = useState(false)
@@ -119,7 +121,7 @@ const Navbar = ({ searchRef }) => {
 
   return (
 
-    <div className='max-w-7xl'>
+    <div className='w-full'>
       {/* Top green shipping bar */}
       <div className="bg-[#5c8018] py-2 px-3 flex items-center justify-center gap-[0.3em]">
         <p className="text-white text-sm">
@@ -132,8 +134,8 @@ const Navbar = ({ searchRef }) => {
       </div>
 
       {/* Main navbar */}
-      <div className="bg-[#174733] text-white w-full h-[87.5px] flex items-center">
-        <div className="flex items-center justify-between w-[90%] mx-auto py-2 relative">
+      <div className="bg-[#174733] text-white w-full min-h-[70px] md:h-[87.5px] flex items-center">
+        <div className="flex items-center justify-between w-full px-3 md:px-6 lg:px-8 py-2 relative">
 
           {/* Search */}
           <div className="flex relative items-center space-x-0 ml-[0.3em]">
@@ -143,13 +145,14 @@ const Navbar = ({ searchRef }) => {
               placeholder="Search products..."
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="w-[255px] h-[45px] rounded-l-md px-[0.3em] focus:outline-none text-black"
+              className="w-[140px] sm:w-[180px] md:w-[255px] h-[40px] md:h-[45px] rounded-l-md px-2 focus:outline-none text-black"
             />
+            
             <button className="h-[45px] w-[45px] bg-[#89c21e] flex items-center justify-center rounded-r-md cursor-pointer">
               <HiMiniMagnifyingGlass className="h-6 w-6 text-white" />
             </button>
             {results.length > 0 && (
-              <div className="absolute top-full left-0 bg-white text-black w-[255px] max-h-60 overflow-y-auto shadow-lg rounded-md mt-1 z-50">
+              <div className="absolute top-full left-0 bg-white text-black w-full min-w-[180px] max-h-60 overflow-y-auto shadow-lg rounded-md mt-1 z-50">
                 {results.map((item) => (
                   <Link
                     key={item._id}
@@ -172,12 +175,18 @@ const Navbar = ({ searchRef }) => {
             <img
               src="https://nutriorg.com/cdn/shop/files/Capture2_270x.png?v=1646817909"
               alt="Nutriorg Logo"
-              className="h-[67.5px] w-[135px] text-left"
+              className="h-[45px] w-auto sm:h-[55px] md:h-[67px] text-left"
             />
           </div>
 
           {/* User & Cart icons */}
           <div className="flex items-center space-x-2 text-white text-2xl cursor-pointer">
+            <button
+               className="md:hidden"
+               onClick={() => setMobileMenu(!mobileMenu)}
+            >
+             {mobileMenu ? <X size={24} /> : <Menu size={24} />}
+           </button>
 
             {
               user?._id ? (
@@ -232,10 +241,66 @@ const Navbar = ({ searchRef }) => {
         </div>
       </div>
 
+      {/* Mobile Menu */}
+{
+  mobileMenu && (
+    <div className="md:hidden bg-white shadow-lg">
+      <ul className="flex flex-col text-black">
+
+        <li className="p-3 border-b">
+          <Link
+            to="/"
+            onClick={() => setMobileMenu(false)}
+          >
+            Home
+          </Link>
+        </li>
+
+        <li className="p-3 border-b">
+          <Link
+            to="/category/detox-juice"
+            onClick={() => setMobileMenu(false)}
+          >
+            Detox Juice
+          </Link>
+        </li>
+
+        <li className="p-3 border-b">
+          <Link
+            to="/category/skin-hair"
+            onClick={() => setMobileMenu(false)}
+          >
+            Skin & Hair Care
+          </Link>
+        </li>
+
+        <li className="p-3 border-b">
+          <Link
+            to="/homeblog"
+            onClick={() => setMobileMenu(false)}
+          >
+            Blogs
+          </Link>
+        </li>
+
+        <li className="p-3 border-b">
+          <Link
+            to="/about"
+            onClick={() => setMobileMenu(false)}
+          >
+            About Us
+          </Link>
+        </li>
+
+      </ul>
+    </div>
+  )
+}
+
 
       {/*Navbar list*/}
       <div className='relative  overflow-visible z-50 mt-3 cursor-pointer font-arimo'>
-        <ul className='flex items-center justify-center gap-7'>
+        <ul className='hidden md:flex items-center justify-center gap-7'>
           <li><Link to="/">Home</Link></li>
           <li className="group flex items-center justify-center">
             Shop
