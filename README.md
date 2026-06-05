@@ -26,24 +26,9 @@ Install dependencies:
 cd client
 npm install
 
-cd ../server
+cd server
 npm install
 
-Create a .env file in the server folder:
-
-FRONTEND_URL=
-PORT=
-MONGODB_URI=
-SECRET_KEY_ACCESS_TOKEN=
-SECRET_KEY_REFRESH_TOKEN=
-RESEND_API=
-CLOUDINARY_CLOUD_NAME=
-CLOUDINARY_API_KEY=
-CLOUDINARY_API_SECRET_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_ENDPOINT_WEBHOOK_SECRET_KEY=
-
-Run the application:
 
 # Backend
 cd server
