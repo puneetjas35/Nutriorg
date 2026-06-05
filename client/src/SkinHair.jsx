@@ -162,7 +162,7 @@ const SkinHair = () => {
 
 
 
-                                            <div className="relative h-[240px] flex items-center justify-center p-4">
+                                            <div className="relative h-[240px] p-4 overflow-hidden">
 
                                                 {/* SALE BADGE */}
                                                 {item.sale && (
@@ -171,16 +171,17 @@ const SkinHair = () => {
                                                     </span>
                                                 )}
 
-                                                <img
-                                                    src={item.image}
-                                                    alt={item.title}
-                                                    className="h-full w-full object-contain transition-opacity duration-300 group-hover:opacity-0"
-                                                />
-                                                <img
-                                                    src={item.hoverImage}
-                                                    alt=""
-                                                    className="absolute inset-0 h-full w-full object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                                                />
+                                              <img
+                                                src={item.image}
+                                                alt={item.title}
+                                                className="absolute inset-0 w-full h-full object-contain p-4 transition-opacity duration-300 group-hover:opacity-0"
+                                             />
+
+                                             <img
+                                               src={item.hoverImage}
+                                               alt=""
+                                               className="absolute inset-0 w-full h-full object-contain p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                                             />
                                             </div>
 
 
