@@ -44,7 +44,11 @@ const UserMenu = ({ close }) => {
     <div className='leading-tight text-left ml-2'>
       <div className='font-semibold text-black text-[12px]'>My Account</div>
       <div className='text-neutral-700 text-[16px] m- flex items-center gap-2'>
-        <span className='max-w-52 text-ellipsis line-clamp-1'>{user.name?.charAt(0).toUpperCase() + user.name?.slice(1)}</span>
+            <span className='max-w-52 text-ellipsis line-clamp-1'>
+             {user?.name
+               ? user.name.charAt(0).toUpperCase() + user.name.slice(1)
+               : "My Account"}
+             </span>
         <Link onClick={handleClose} to={"/dashboard/profile"} className='hover:text-yellow-200'>
           <HiOutlineExternalLink className='' size={15} />
 
