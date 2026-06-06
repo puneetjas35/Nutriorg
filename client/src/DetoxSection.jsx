@@ -45,8 +45,8 @@ const DetoxSection = () => {
     return (
         <div className="main_detox_section bg-[#f4f2e9]">
             {/* Heading */}
-            <div className="heading m-6  flex items-center justify-between leading-[1.4em]">
-                <h2 className="text-[24px] ml-7 mt-6 font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
+           <div className="heading px-4 py-4 md:px-6 flex items-center justify-between leading-[1.4em]">
+                <h2 className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
                     <a href="#" className="font-[Montserrat,sans-serif]">
                         DETOX JUICES
                     </a>
@@ -54,14 +54,14 @@ const DetoxSection = () => {
 
                 <a
                     href="/category/detox-juice"
-                    className="text-[17px] mr-8 font-[Montserrat,sans-serif] text-[#A18E96] underline underline-offset-4"
+                    className="text-[14px] sm:text-[16px] font-[Montserrat,sans-serif] text-[#A18E96] underline underline-offset-4"
                 >
                     View all
                 </a>
             </div>
 
             {/* Swiper */}
-            <div className="relative max-w-6xl mx-auto px-4">
+            <div className="relative w-full px-2 sm:px-4">
 
 
                 <Swiper
@@ -70,9 +70,23 @@ const DetoxSection = () => {
                     slidesPerView={1}
                     navigation
                     loop={products.length > 4}
-                    breakpoints={{
-                        640: { slidesPerView: 2, slidesPerGroup: 2 },
-                        1024: { slidesPerView: 4, slidesPerGroup: 4 },
+                   breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                        slidesPerGroup: 1,
+                      },
+                      640: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                      },
+                      1024: {
+                        slidesPerView: 4,
+                        slidesPerGroup: 4,
+                      },
                     }}
                 >
                     {products.map((product) => (
@@ -82,7 +96,7 @@ const DetoxSection = () => {
                             <div className="bg-white rounded-xl shadow flex flex-col w-full pt-7 pb-3">
 
                                 <Link to={`/product/${product.slug || product._id}`}>
-                                    <div className="relative group w-full h-[230px] flex items-center justify-center">
+                                    <div className="relative group w-full h-[180px] sm:h-[220px] md:h-[230px] flex items-center justify-center">
                                         <img
                                             src={product.image}
                                             alt={product.title}
@@ -101,14 +115,14 @@ const DetoxSection = () => {
                                 <div className="flex grow justify-between mt-4 min-h-[110px] font-[Montserrat,sans-serif]">
 
                                     {/* Product Name */}
-                                    <div className="leftSectionDetox p-2 max-w-[65%]">
+                                    <div className="leftSectionDetox p-2 flex-1">
                                         <p className="product_title text-[12px] line-clamp-2 leading-[1.4em] mb-3 text-[#3a3a3a]">
                                             {product.title}
                                         </p>
                                     </div>
 
                                     {/* Right: Price Details */}
-                                    <div className="rightSectionDetox space-y-1 pr-3 text-right min-h-[60px]">
+                                   <div className="rightSectionDetox space-y-1 pr-2 text-right min-h-[60px] shrink-0">
 
                                         {/* Selling Price */}
                                         <p className="font-semibold text-[12px] mr-3 text-[#000]">
@@ -119,7 +133,7 @@ const DetoxSection = () => {
 
                                         {/* MRP + Discount */}
                                         {product.mrp && product.discount && (
-                                            <div className="flex justify-end items-center gap-2 text-[11px]">
+                                            <div className="flex flex-wrap justify-end items-center gap-1 text-[11px]">
                                                 <span className="line-through text-gray-400">
                                                     ₹{product.mrp}
                                                 </span>
@@ -134,8 +148,8 @@ const DetoxSection = () => {
                                         {/* You Save */}
                                         {product.saved && (
                                             <div className="text-[11px] text-green-600 flex mt-1">
-                                                <p>"You Save"
-                                                    ₹{product.saved}
+                                                <p>
+                                                    You Save ₹{product.saved}
                                                 </p>
                                             </div>
                                         )}
@@ -146,7 +160,7 @@ const DetoxSection = () => {
                                 </div>
 
                                 {/* Button */}
-                                <div className="w-full bg-[#97b924] rounded p-2 mt-auto">
+                                <div className="w-full bg-[#97b924] rounded p-2 mt-auto min-h-[52px]">
                                    <AddToCartButton data={product}/>
                                 </div>
                             </div>
