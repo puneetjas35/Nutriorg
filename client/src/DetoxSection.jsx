@@ -45,7 +45,7 @@ const DetoxSection = () => {
     return (
         <div className="main_detox_section bg-[#f4f2e9]">
             {/* Heading */}
-           <div className="heading px-4 py-4 md:px-6 flex items-center justify-between leading-[1.4em]">
+           <div className="heading px-4 py-8 md:px-6 flex items-center justify-between leading-[1.4em]">
                 <h2 className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
                     <a href="#" className="font-[Montserrat,sans-serif]">
                         DETOX JUICES
