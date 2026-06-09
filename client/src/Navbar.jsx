@@ -171,7 +171,7 @@ const Navbar = ({ searchRef }) => {
           </div>
 
           {/* Logo */}
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+          <div className="flex justify-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
             <img
               src="https://nutriorg.com/cdn/shop/files/Capture2_270x.png?v=1646817909"
               alt="Nutriorg Logo"
