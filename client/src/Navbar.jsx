@@ -316,7 +316,7 @@ const Navbar = ({ searchRef }) => {
 
       {/*Navbar list*/}
       <div className='relative  overflow-visible z-50 mt-3 cursor-pointer font-arimo'>
-        <ul className='hidden lg:flex items-center justify-center gap-4 xl:gap-7'>
+        <ul className='hidden md:flex items-center justify-center gap-4 xl:gap-7'>
           <li><Link to="/">Home</Link></li>
           <li className="group flex items-center justify-center">
             Shop
