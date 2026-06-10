@@ -15,7 +15,7 @@ const ImageCarousel = () => {
     >
       <SwiperSlide>
         <Link to="/product/aloeamla">
-        <div className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[450px] overflow-hidden">
+        <div className="w-full aspect-[16/6] overflow-hidden">
           <picture>
               <source
                 media="(max-width: 767px)"
@@ -35,7 +35,7 @@ const ImageCarousel = () => {
      
       <SwiperSlide>
         <Link to="/category/cold-pressed-oils">
-        <div className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[450px] overflow-hidden">
+        <div className="w-full aspect-[16/6] overflow-hidden">
         <picture>
             <source
               media="(max-width: 767px)"
@@ -57,7 +57,7 @@ const ImageCarousel = () => {
       
       <SwiperSlide>
         <Link to="/product/seabuckthorn">
-        <div className="w-full h-[220px] sm:h-[280px] md:h-[350px] lg:h-[450px] overflow-hidden">
+        <div className="w-full aspect-[16/6] overflow-hidden">
         <picture>
           <source
             media="(max-width: 767px)"
