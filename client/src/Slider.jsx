@@ -15,7 +15,6 @@ const ImageCarousel = () => {
     >
       <SwiperSlide>
         <Link to="/product/aloeamla">
-        <div className="">
           <picture>
               <source
                 media="(max-width: 767px)"
@@ -24,18 +23,16 @@ const ImageCarousel = () => {
             <img
               src="https://nutriorg.com/cdn/shop/files/Juice_Web.jpg?v=1754546468"
               alt="Image 1"
-              className="w-full h-full object-contain cursor-pointer"
+              className="w-full h-auto object-contain cursor-pointer"
               draggable="false"
             />
          </picture>
-        </div>
         </Link>
       </SwiperSlide>
      
      
       <SwiperSlide>
         <Link to="/category/cold-pressed-oils">
-        <div className="">
         <picture>
             <source
               media="(max-width: 767px)"
@@ -44,12 +41,11 @@ const ImageCarousel = () => {
             <img
               src="https://nutriorg.com/cdn/shop/files/Oil_web.jpg?v=1754546468"
               alt="Image 2"
-              className="w-full h-full object-cotain cursor-pointer"
+              className="w-full h-auto object-cotain cursor-pointer"
               loading="lazy"
               draggable="false"
             />
         </picture>
-        </div>
         </Link>
       </SwiperSlide>
       
@@ -57,7 +53,6 @@ const ImageCarousel = () => {
       
       <SwiperSlide>
         <Link to="/product/seabuckthorn">
-        <div className="">
         <picture>
           <source
             media="(max-width: 767px)"
@@ -66,7 +61,7 @@ const ImageCarousel = () => {
           <img
             src="https://nutriorg.com/cdn/shop/files/Sea_Buckthorn_Web_828b8ef8-07a7-467f-94b1-23623e3481de.jpg?v=1754546592"
             alt="Image 3"
-            className="w-full h-full object-contain cursor-pointer"
+            className="w-full h-auto object-contain cursor-pointer"
             loading="lazy"
             draggable="false"
           />
