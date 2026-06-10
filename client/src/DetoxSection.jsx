@@ -93,10 +93,10 @@ const DetoxSection = () => {
                         <SwiperSlide key={product._id} className="h-full flex">
 
                             {/* Product Image */}
-                            <div className="bg-white rounded-xl shadow flex flex-col w-full h-full pt-7 pb-3">
+                            <div className="bg-white rounded-xl shadow flex flex-col w-full h-full pt-3 pb-2">
 
                                 <Link to={`/product/${product.slug || product._id}`}>
-                                    <div className="relative group w-full h-[180px] sm:h-[220px] md:h-[230px] flex items-center justify-center">
+                                    <div className="relative group w-full h-[120px] sm:h-[160px] md:h-[200px] flex items-center justify-center">
                                         <img
                                             src={product.image}
                                             alt={product.title}
