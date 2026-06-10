@@ -65,7 +65,6 @@ const Navbar = ({ searchRef }) => {
   useEffect(() => {
     const delay = setTimeout(() => {
       if (!query || query.trim().length < 2) {
-        setQuery("");
         setResults([]);
 
         return;
@@ -259,7 +258,25 @@ const Navbar = ({ searchRef }) => {
           <HiMiniMagnifyingGlass className="text-white" />
         </button>
       </div>
-    </div>
+      {results.length > 0 && (
+  <div className="bg-white text-black max-h-60 overflow-y-auto border border-gray-200 rounded-md mt-2 shadow-lg">
+    {results.map((item) => (
+      <Link
+        key={item._id}
+        to={`/product/${item.slug}`}
+        className="block px-3 py-2 hover:bg-gray-100 text-sm font-semibold"
+        onClick={() => {
+          setResults([]);
+          setQuery("");
+          setMobileMenu(false);
+        }}
+      >
+        {item.title}
+      </Link>
+    ))}
+  </div>
+   )}
+</div>
 
     <ul className="flex flex-col text-black">
 
