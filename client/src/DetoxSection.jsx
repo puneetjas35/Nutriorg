@@ -43,7 +43,7 @@ const DetoxSection = () => {
 
 
     return (
-        <div className="main_detox_section mt-6 bg-[#f4f2e9]">
+        <div className="main_detox_section mt-3 bg-[#f4f2e9]">
             {/* Heading */}
            <div className="heading px-4 py-4 md:px-6 flex items-center justify-between leading-[1.4em]">
                 <h2 className="text-[18px] sm:text-[20px] md:text-[24px] font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
@@ -66,28 +66,32 @@ const DetoxSection = () => {
 
                 <Swiper
                     modules={[Navigation]}
-                    spaceBetween={16}
+                    spaceBetween={10}
                     slidesPerView={1}
                     navigation
                     loop={products.length > 4}
                    breakpoints={{
-                      0: {
-                        slidesPerView: 2,
-                        slidesPerGroup: 2,
-                      },
-                      640: {
-                        slidesPerView: 2,
-                        slidesPerGroup: 2,
-                      },
-                      768: {
-                        slidesPerView: 3,
-                        slidesPerGroup: 3,
-                      },
-                      1024: {
-                        slidesPerView: 4,
-                        slidesPerGroup: 4,
-                      },
-                    }}
+                          0: {
+                            slidesPerView: 2,
+                            slidesPerGroup: 2,
+                            spaceBetween: 10,
+                          },
+                          640: {
+                            slidesPerView: 2,
+                            slidesPerGroup: 2,
+                            spaceBetween: 14,
+                          },
+                          768: {
+                            slidesPerView: 3,
+                            slidesPerGroup: 3,
+                            spaceBetween: 16,
+                          },
+                          1024: {
+                            slidesPerView: 4,
+                            slidesPerGroup: 4,
+                            spaceBetween: 20,
+                          },
+                        }}
                 >
                     {products.map((product) => (
                         <SwiperSlide key={product._id} className="h-full flex">
@@ -96,7 +100,7 @@ const DetoxSection = () => {
                             <div className="bg-white rounded-xl shadow flex flex-col w-full h-full pt-3 pb-2">
 
                                 <Link to={`/product/${product.slug || product._id}`}>
-                                    <div className="relative group w-full h-[120px] sm:h-[160px] md:h-[200px] flex items-center justify-center">
+                                    <div className="relative group w-full h-[100px] sm:h-[140px] md:h-[180px] flex items-center justify-center">
                                         <img
                                             src={product.image}
                                             alt={product.title}
@@ -112,7 +116,7 @@ const DetoxSection = () => {
                                 </Link>
 
 
-                                <div className="flex grow justify-between mt-4 min-h-[110px] font-[Montserrat,sans-serif]">
+                                <div className="flex grow justify-between mt-2 min-h-[70px] font-[Montserrat,sans-serif]">
 
                                     {/* Product Name */}
                                     <div className="leftSectionDetox p-2 flex-1">
@@ -160,7 +164,7 @@ const DetoxSection = () => {
                                 </div>
 
                                 {/* Button */}
-                                <div className="w-full bg-[#97b924] rounded p-2 mt-auto min-h-[52px]">
+                                <div className="w-full bg-[#97b924] rounded p-2 mt-auto min-h-[40px]">
                                    <AddToCartButton data={product}/>
                                 </div>
                             </div>
