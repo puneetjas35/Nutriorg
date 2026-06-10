@@ -41,7 +41,7 @@ const ImageCarousel = () => {
             <img
               src="https://nutriorg.com/cdn/shop/files/Oil_web.jpg?v=1754546468"
               alt="Image 2"
-              className="w-full h-auto object-cotain cursor-pointer"
+              className="w-full h-auto object-contain cursor-pointer"
               loading="lazy"
               draggable="false"
             />
@@ -66,7 +66,7 @@ const ImageCarousel = () => {
             draggable="false"
           />
       </picture>
-        </div>
+      
         </Link>
       </SwiperSlide>
       
