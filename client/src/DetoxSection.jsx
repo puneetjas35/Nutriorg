@@ -72,8 +72,8 @@ const DetoxSection = () => {
                     loop={products.length > 4}
                    breakpoints={{
                       0: {
-                        slidesPerView: 1,
-                        slidesPerGroup: 1,
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
                       },
                       640: {
                         slidesPerView: 2,
