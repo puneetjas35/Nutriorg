@@ -27,34 +27,28 @@ const NextArrow = ({ onClick }) => (
 
 const ShopCategory = () => {
 const settings = {
+  mobileFirst: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 5,
+  slidesToShow: 2,
   slidesToScroll: 1,
-  arrows: true,
-  prevArrow: <PrevArrow />,
-  nextArrow: <NextArrow />,
   responsive: [
     {
-      breakpoint: 1536,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToShow: 3,
       },
     },
     {
       breakpoint: 1200,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToShow: 4,
       },
     },
     {
-      breakpoint: 768,
+      breakpoint: 1536,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
+        slidesToShow: 5,
       },
     },
   ],
