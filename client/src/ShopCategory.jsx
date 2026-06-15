@@ -59,6 +59,7 @@ const settings = {
     },
   ],
 };
+  console.log("Slider settings:", settings);
   
   return (
     <section className='border-top collection-section py-4 overflow-visible'>
