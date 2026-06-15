@@ -56,6 +56,11 @@ const ShopCategory = () => {
         slidesToScroll: 1,
       },
     },
+      {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+      },
   ],
 };
 
