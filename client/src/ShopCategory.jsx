@@ -26,13 +26,40 @@ const NextArrow = ({ onClick }) => (
 
 
 const ShopCategory = () => {
- const settings = {
+const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 5,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
+  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrow />,
+  responsive: [
+    {
+      breakpoint: 1536,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      },
+    },
+  ],
 };
+  
   return (
     <section className='border-top collection-section py-4 overflow-visible'>
       <div className='flex items-center justify-between'>
@@ -41,7 +68,7 @@ const ShopCategory = () => {
       <div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <Slider {...settings}>
-            <div className="border border-red-500">
+            <div className="">
               <Link to={"/category/detox-juice"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
               </Link>
