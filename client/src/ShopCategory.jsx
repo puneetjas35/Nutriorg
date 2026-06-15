@@ -56,6 +56,8 @@ const settings = {
     },
   ],
 };
+
+  console.log(settings);
   return (
     <section className='border-top collection-section py-4 overflow-visible'>
       <div className='flex items-center justify-between'>
