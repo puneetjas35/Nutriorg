@@ -29,7 +29,7 @@ const ShopCategory = () => {
 const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: 5, // Desktop default
+  slidesToShow: 5,
   slidesToScroll: 1,
   arrows: true,
   prevArrow: <PrevArrow />,
@@ -56,7 +56,6 @@ const settings = {
     },
   ],
 };
-  
   return (
     <section className='border-top collection-section py-4 overflow-visible'>
       <div className='flex items-center justify-between'>
@@ -66,11 +65,7 @@ const settings = {
         <div className="w-full">
        
           <Slider
-            infinite={false}
-            slidesToShow={2}
-            slidesToScroll={1}
-            arrows={false}
-          >
+           <Slider {...settings}>
             <div className="">
               <Link to={"/category/detox-juice"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
