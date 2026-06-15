@@ -63,9 +63,14 @@ const settings = {
         <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY Test</h2>
       </div>
       <div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="w-full">
        
-          <Slider {...settings}>
+          <Slider
+            infinite={false}
+            slidesToShow={2}
+            slidesToScroll={1}
+            arrows={false}
+          >
             <div className="">
               <Link to={"/category/detox-juice"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
