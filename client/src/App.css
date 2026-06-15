@@ -15,12 +15,12 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-.slick-track {
-  display: block !important;
+.slick-slide > div {
+  margin: 0 8px;
 }
 
-.slick-slide {
-  float: left !important;
+.slick-list {
+  margin: 0 -8px;
 }
 
 @media (max-width: 639px) {
