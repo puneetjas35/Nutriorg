@@ -57,11 +57,10 @@ const settings = {
   ],
 };
 
-  console.log(settings);
   return (
     <section className='border-top shop-category-slider collection-section py-4 overflow-visible'>
       <div className='flex items-center shop-category-slider justify-between'>
-        <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY Test</h2>
+        <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY</h2>
       </div>
       <div>
         <div className="w-full shop-category-slider">
