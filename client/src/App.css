@@ -15,6 +15,13 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
+.slick-track {
+  display: block !important;
+}
+
+.slick-slide {
+  float: left !important;
+}
 
 @media (max-width: 639px) {
   .swiper-button-prev,
