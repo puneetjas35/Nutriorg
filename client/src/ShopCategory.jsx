@@ -63,7 +63,7 @@ const settings = {
   return (
     <section className='border-top collection-section py-4 overflow-visible'>
       <div className='flex items-center justify-between'>
-        <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY</h2>
+        <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY Test</h2>
       </div>
       <div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
