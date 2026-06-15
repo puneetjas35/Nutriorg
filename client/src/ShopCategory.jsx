@@ -73,9 +73,9 @@ const ShopCategory = () => {
       <div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
           <Slider {...settings}>
-            <div className="">
+            <div className="border border-red-500">
               <Link to={"/category/detox-juice"}>
-                <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
+              <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
               </Link>
             </div>
             <div>
