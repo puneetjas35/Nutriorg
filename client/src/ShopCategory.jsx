@@ -61,6 +61,7 @@ const ShopCategory = () => {
       settings: {
         slidesToShow: 2,
       },
+      },
   ],
 };
 
