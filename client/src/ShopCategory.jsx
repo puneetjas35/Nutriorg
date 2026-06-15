@@ -27,33 +27,35 @@ const NextArrow = ({ onClick }) => (
 
 const ShopCategory = () => {
 const settings = {
-  mobileFirst: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 5, // Desktop default
   slidesToScroll: 1,
+  arrows: true,
+  prevArrow: <PrevArrow />,
+  nextArrow: <NextArrow />,
   responsive: [
     {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
-      breakpoint: 1200,
+      breakpoint: 1536,
       settings: {
         slidesToShow: 4,
       },
     },
     {
-      breakpoint: 1536,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 5,
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
       },
     },
   ],
 };
-
   
   return (
     <section className='border-top collection-section py-4 overflow-visible'>
