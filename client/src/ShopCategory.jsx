@@ -65,8 +65,6 @@ const settings = {
       </div>
       <div>
         <div className="w-full">
-       
-          <Slider
            <Slider {...settings}>
             <div className="">
               <Link to={"/category/detox-juice"}>
