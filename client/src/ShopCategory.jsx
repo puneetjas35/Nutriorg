@@ -68,6 +68,7 @@ const settings = {
       </div>
       <div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
+          console.log(settings);
           <Slider {...settings}>
             <div className="">
               <Link to={"/category/detox-juice"}>
