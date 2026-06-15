@@ -59,45 +59,45 @@ const settings = {
 
   console.log(settings);
   return (
-    <section className='border-top collection-section py-4 overflow-visible'>
-      <div className='flex items-center justify-between'>
+    <section className='border-top shop-category-slider collection-section py-4 overflow-visible'>
+      <div className='flex items-center shop-category-slider justify-between'>
         <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY Test</h2>
       </div>
       <div>
-        <div className="w-full">
+        <div className="w-full shop-category-slider">
            <Slider {...settings}>
-            <div className="">
+            <div className="category-slider">
               <Link to={"/category/detox-juice"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
               </Link>
             </div>
-            <div>
+            <div classname="category-slider">
               <Link to={"/category/skin-hair"}>
                 <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/6_460x.jpg?v=1733133980" alt="" />
               </Link>
             </div>
-            <div>
+            <div classname="category-slider">
               <Link to={"/category/healthy-breakfast"}>
                 <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/4_460x.jpg?v=1733137260" alt="" />
               </Link>
             </div>
-            <div>
+            <div classname="category-slider">
               <Link to={"/category/healthy-powder"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/5_460x.jpg?v=1733125861" alt="" />
               </Link>
             </div>
-            <div>
+            <div classname="category-slider">
               <Link to={"/category/cold-pressed-oils"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/3_460x.jpg?v=1733137358" alt="" />
             </Link>
             </div>
-            <div>
+            <div classname="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/9_460x.jpg?v=1733142353" alt="" />
             </div>
-            <div>
+            <div classname="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/10_1_460x.jpg?v=1733142411" alt="" />
             </div>
-            <div>
+            <div classname="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/2_460x.jpg?v=1733142378" alt="" />
             </div>
           </Slider>
