@@ -70,33 +70,33 @@ const settings = {
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/1_460x.jpg?v=1733133942" alt="" />
               </Link>
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <Link to={"/category/skin-hair"}>
                 <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/6_460x.jpg?v=1733133980" alt="" />
               </Link>
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <Link to={"/category/healthy-breakfast"}>
                 <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/4_460x.jpg?v=1733137260" alt="" />
               </Link>
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <Link to={"/category/healthy-powder"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/5_460x.jpg?v=1733125861" alt="" />
               </Link>
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <Link to={"/category/cold-pressed-oils"}>
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/3_460x.jpg?v=1733137358" alt="" />
             </Link>
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/9_460x.jpg?v=1733142353" alt="" />
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/10_1_460x.jpg?v=1733142411" alt="" />
             </div>
-            <div classname="category-slider">
+            <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/2_460x.jpg?v=1733142378" alt="" />
             </div>
           </Slider>
