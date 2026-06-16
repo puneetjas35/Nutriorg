@@ -75,7 +75,7 @@ const settings = {
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/3_460x.jpg?v=1733137358" alt="" />
             </Link>
             </div>
-            {/* <div className="category-slider">
+            <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/9_460x.jpg?v=1733142353" alt="" />
             </div>
             <div className="category-slider">
@@ -83,7 +83,7 @@ const settings = {
             </div>
             <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/2_460x.jpg?v=1733142378" alt="" />
-            </div> */}
+            </div> 
           </Slider>
         </div>
 
