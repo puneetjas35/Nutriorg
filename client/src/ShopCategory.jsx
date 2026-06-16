@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-0 md:-left-6 top-1/2 -translate-y-1/2 z-20 text-[35px] md:text-[50px] text-[#6a5b5c]"
+    className="absolute left-2 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white px-2"
   >
     ‹
   </button>
@@ -17,7 +17,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-0 md:-right-6 top-1/2 -translate-y-1/2 z-20 text-[35px] md:text-[50px] text-[#6a5b5c]"
+    className="absolute right-2 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white px-2"
   >
     ›
   </button>
