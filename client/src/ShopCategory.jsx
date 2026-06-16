@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute left-2 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white px-2"
+    className="absolute -left-12 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
   >
     ‹
   </button>
@@ -17,7 +17,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute right-2 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white px-2"
+    className="absolute -right-8 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
   >
     ›
   </button>
@@ -37,7 +37,7 @@ const settings = {
     width < 1200 ? 3 :
     5,
   slidesToScroll: 1,
-  arrows: width >= 768,
+  arrows: true,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
 };
@@ -48,7 +48,7 @@ const settings = {
         <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY</h2>
       </div>
       <div>
-        <div className="w-full shop-category-slider px-6 md:px-12">
+        <div className="w-full relative shop-category-slider px-6 md:px-12">
            <Slider {...settings}>
             <div className="category-slider">
               <Link to={"/category/detox-juice"}>
