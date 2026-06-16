@@ -15,11 +15,11 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-.slick-slide > div {
+.shop-category-slider .slick-slide > div {
   margin: 0 8px;
 }
 
-.slick-list {
+.shop-category-slider .slick-list {
   margin: 0 -8px;
 }
 
