@@ -29,33 +29,25 @@ const ShopCategory = () => {
 const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: 1,
+  slidesToShow: 5,
   slidesToScroll: 1,
   arrows: true,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
   responsive: [
     {
-      breakpoint: 1536,
-      settings: {
-        slidesToShow: 4,
-      },
-    },
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 3,
-      },
-    },
-    {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
+        slidesToScroll: 1,
         arrows: false,
       },
     },
   ],
 };
+  useEffect(() => {
+  console.log("Width:", window.innerWidth);
+}, []);
 
   return (
     <section className='border-top shop-category-slider collection-section py-4 overflow-visible'>
