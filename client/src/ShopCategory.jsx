@@ -26,13 +26,18 @@ const NextArrow = ({ onClick }) => (
 
 
 const ShopCategory = () => {
-  console.log("Width:", window.innerWidth);
+
+const width = window.innerWidth;
+
 const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: window.innerWidth < 768 ? 2 : 5,
+  slidesToShow:
+    width < 768 ? 2 :
+    width < 1200 ? 3 :
+    5,
   slidesToScroll: 1,
-  arrows: window.innerWidth >= 768,
+  arrows: width >= 768,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
 };
