@@ -48,7 +48,7 @@ const settings = {
         <h2 className='font-[Montserrat,sans-serif] leading-[1.2em] text-[#6a5b5c] m-7 font-semibold text-[24px]'>SHOP BY CATEGORY</h2>
       </div>
       <div>
-        <div className="w-full shop-category-slider">
+        <div className="w-full shop-category-slider px-6 md:px-12">
            <Slider {...settings}>
             <div className="category-slider">
               <Link to={"/category/detox-juice"}>
