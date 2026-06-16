@@ -35,16 +35,15 @@ const settings = {
   arrows: true,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        arrows: false,
-      },
+responsive: [
+  {
+    breakpoint: 9999,
+    settings: {
+      slidesToShow: 2,
+      arrows: false,
     },
-  ],
+  },
+],
 };
 
 
