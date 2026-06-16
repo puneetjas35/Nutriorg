@@ -30,22 +30,12 @@ const ShopCategory = () => {
 const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: 5,
+  slidesToShow: window.innerWidth < 768 ? 2 : 5,
   slidesToScroll: 1,
-  arrows: true,
+  arrows: window.innerWidth >= 768,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
-responsive: [
-  {
-    breakpoint: 9999,
-    settings: {
-      slidesToShow: 2,
-      arrows: false,
-    },
-  },
-],
 };
-
 
   return (
     <section className='border-top shop-category-slider collection-section py-4 overflow-visible'>
