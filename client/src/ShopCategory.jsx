@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute -left-12 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
+    className="absolute -left-10 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
   >
     ‹
   </button>
@@ -17,7 +17,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute -right-8 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
+    className="absolute -right-10 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
   >
     ›
   </button>
@@ -75,7 +75,7 @@ const settings = {
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/3_460x.jpg?v=1733137358" alt="" />
             </Link>
             </div>
-            <div className="category-slider">
+            {/* <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/9_460x.jpg?v=1733142353" alt="" />
             </div>
             <div className="category-slider">
@@ -83,7 +83,7 @@ const settings = {
             </div>
             <div className="category-slider">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/2_460x.jpg?v=1733142378" alt="" />
-            </div>
+            </div> */}
           </Slider>
         </div>
 
