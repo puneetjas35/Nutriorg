@@ -26,6 +26,7 @@ const NextArrow = ({ onClick }) => (
 
 
 const ShopCategory = () => {
+  console.log("Width:", window.innerWidth);
 const settings = {
   infinite: true,
   speed: 500,
@@ -45,9 +46,7 @@ const settings = {
     },
   ],
 };
-  useEffect(() => {
-  console.log("Width:", window.innerWidth);
-}, []);
+
 
   return (
     <section className='border-top shop-category-slider collection-section py-4 overflow-visible'>
