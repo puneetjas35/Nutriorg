@@ -17,10 +17,11 @@ const videos = [
     src: "https://video.gumlet.io/64661d8e673536e1fe9044e2/66266ed24d91ce7d6197e998/main.mp4",
     poster: "https://video.gumlet.io/64661d8e673536e1fe9044e2/66266ecf69e64c70c27b300f/thumbnail-1-0.png",
     text: "High Altitude Honey Certified Organic",
-    productId: "65fabc123457",
-    Sellingprice: "237",
+    productId: "6a327595e7e4e58254eae01a",
+    Sellingprice: "239",
     OriginalPrice: "250",
     Discount: "5",
+    variantId: "69a93b510aeb61524b018384",
     img: "https://cdn.shopify.com/s/files/1/0522/2826/0008/files/frnt_8349c9fd-9fe9-46c1-8040-39313b863312.jpg?v=1687431462&height=150&width=150",
     button: "Buy Now"
   },
@@ -28,23 +29,24 @@ const videos = [
     src: "https://video.gumlet.io/64661d8e673536e1fe9044e2/66266fe44d91ce7d6197edfe/main.mp4",
     poster: "https://video.gumlet.io/64661d8e673536e1fe9044e2/66266fe169e64c70c27b349b/thumbnail-1-0.png",
     text: "Wheatgrass powder 75g Certified Organic",
-    productId: "65fabc123458",
-    Sellingprice: "310",
-    OriginalPrice: "345",
-    Discount: "10",
+    productId: "6a327595e7e4e58254eae01b",
+    Sellingprice: "521",
+    OriginalPrice: "549",
+    Discount: "5",
     img: "https://cdn.shopify.com/s/files/1/0522/2826/0008/products/frnt_4b475779-57d6-415e-a2ad-8fbf5712c4fd.jpg?v=1653025638&height=150&width=150",
     button: "Buy Now"
   },
   {
     src: "https://video.gumlet.io/64661d8e673536e1fe9044e2/67b9c3fe1ed9a426fa716a5a/main.mp4",
     poster: "https://video.gumlet.io/64661d8e673536e1fe9044e2/67b9c3fe1ed9a426fa716a5a/thumbnail-1-0.png",
-    text: "Wheatgrass powder 75g Certified Organic",
-    productId: "65fabc123459",
-    Sellingprice: "325",
-    OriginalPrice: "305",
-    Discount: "16",
+    text: "Vedic Chyawanprash",
+    productId: "6a327595e7e4e58254eae01c",
+    Sellingprice: "249",
+    OriginalPrice: "385",
+    Discount: "5",
     img: "https://cdn.shopify.com/s/files/1/0522/2826/0008/files/1_a3416db9-52a3-44e6-ab91-01d9a2d1281d.jpg?v=1768978340&height=150&width=150",
-    button: "Buy Now"
+    button: "Buy Now",
+    variantId : "69a93b510aeb61524b018386"
   },
 ];
 
@@ -150,7 +152,7 @@ const WatchShop = () => {
               )} */}
               {video.productId && (
                 <div className='w-full bg-[rgb(92,128,24)] rounded-[6px] text-[12px] p-2 mt-2 text-center'>
-                  <AddToCartButton productId={video.productId} />
+                  <AddToCartButton data={{ _id: video.productId }} />
                 </div>
               )}
 
@@ -275,7 +277,7 @@ const WatchShop = () => {
 
                     {/* RIGHT SIDE BUTTON */}
                     <div className='w-full bg-[rgb(92,128,24)] rounded-[6px] text-[12px] p-2 mt-2 text-center'>
-                    <AddToCartButton  productId={activeVideo.productId} />
+                     <AddToCartButton data={{ _id: activeVideo.productId }} />
                     </div>
 
                   </div>
