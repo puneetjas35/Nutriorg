@@ -107,15 +107,15 @@ const SkinHair = () => {
 
     const [emblaRef, emblaApi] = useEmblaCarousel({
           align: "start",
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           containScroll: "trimSnaps",
         });
 
     return (
         <section className="skincare bg-[rgb(244,242,233)] pb-8">
             {/* Heading */}
-            <div className="heading m-6 flex items-center justify-between leading-[1.4em]">
-                <h2 className="text-[24px] ml-7 mt-6 font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
+           <div className="heading px-4 md:px-6 py-2 md:py-4 flex items-center justify-between">
+                <h2 className="text-[18px] md:text-[24px] font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
                     <a href="#" className="font-['Montserrat',sans-serif]">
                         SKIN & HAIR CARE
                     </a>
@@ -123,7 +123,7 @@ const SkinHair = () => {
 
                 <a
                     href="category/skin-hair"
-                    className="text-[17px] mr-8 font-[Montserrat,sans-serif] text-[#A18E96] underline underline-offset-4"
+                    className="text-[14px] md:text-[17px] font-[Montserrat,sans-serif] text-[#A18E96] underline underline-offset-4"
                 >
                     View all
                 </a>
@@ -156,8 +156,7 @@ const SkinHair = () => {
                                 <div
                                     key={item._id}
                                     className="
-                                      flex-[0_0_85%]
-                                      sm:flex-[0_0_50%]
+                                      flex-[0_0_50%]
                                       md:flex-[0_0_33.333%]
                                       lg:flex-[0_0_25%]
                                       px-2
@@ -166,11 +165,11 @@ const SkinHair = () => {
                                                                     >
                                     <Link to={`/product/${item.slug || item._id}`}>
                                         
-                   <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-[340px] md:h-[400px]">
+                   <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-[300px] md:h-[400px]">
 
 
 
-                                            <div className="relative h-[180px] md:h-[240px] p-4 overflow-hidden">
+                                            <div className="relative h-[140px] md:h-[240px] p-4 overflow-hidden">
 
                                                 {/* SALE BADGE */}
                                                 {item.sale && (
