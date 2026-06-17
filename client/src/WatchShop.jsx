@@ -12,7 +12,7 @@ const videos = [
     src: "https://video.gumlet.io/64661d8e673536e1fe9044e2/668b9090517fbad3e8086ac6/main.mp4",
     poster: "https://video.gumlet.io/64661d8e673536e1fe9044e2/668b908dc770c53a5de12e0d/thumbnail-1-0.png",
     text: "Healthy Oats",
-    productId: "65fabc123456",
+     button: "Buy Now"
   },
   {
     src: "https://video.gumlet.io/64661d8e673536e1fe9044e2/66266ed24d91ce7d6197e998/main.mp4",
