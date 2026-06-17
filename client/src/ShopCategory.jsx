@@ -76,13 +76,19 @@ const settings = {
             </Link>
             </div>
             <div className="category-slider">
+              <Link to="#">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/9_460x.jpg?v=1733142353" alt="" />
+              </Link>
             </div>
             <div className="category-slider">
+              <Link to="#">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/10_1_460x.jpg?v=1733142411" alt="" />
+              </Link>
             </div>
             <div className="category-slider">
+              <Link to="#">
               <img className="w-full h-auto rounded-md" src="https://nutriorg.com/cdn/shop/collections/2_460x.jpg?v=1733142378" alt="" />
+              </Link>
             </div> 
           </Slider>
         </div>
