@@ -95,7 +95,7 @@ const SkinHair = () => {
                 });
 
                 if (response.data.success) {
-                    setProducts(response.data.data); // your product array
+                    setProducts(response.data.data); 
                 }
             } catch (error) {
                 console.log(error);
@@ -106,9 +106,10 @@ const SkinHair = () => {
     }, []);
 
     const [emblaRef, emblaApi] = useEmblaCarousel({
-        align: "start",
-        slidesToScroll: 3,
-    });
+          align: "start",
+          slidesToScroll: 2,
+          containScroll: "trimSnaps",
+        });
 
     return (
         <section className="skincare bg-[rgb(244,242,233)] pb-8">
@@ -133,36 +134,43 @@ const SkinHair = () => {
             <div className="relative">
                 {/* Left Arrow */}
                 <button
-                    onClick={() => emblaApi?.scrollPrev()}
-                    className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
-                >
+                      onClick={() => emblaApi?.scrollPrev()}
+                      className="hidden md:block absolute -left-2 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
+                    >
                     <ChevronLeft size={36} />
                 </button>
 
                 {/* Right Arrow */}
                 <button
                     onClick={() => emblaApi?.scrollNext()}
-                    className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
+                    className="hidden md:block absolute -right-2 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
                 >
                     <ChevronRight size={36} />
                 </button>
 
                 {/* Embla Viewport */}
-                <div className="max-w-[1280px] mx-auto px-6">
+                <div className="max-w-[1280px] mx-auto px-2 sm:px-4 md:px-6">
                     <div ref={emblaRef} className="overflow-hidden">
                         <div className="flex">
                             {products.map((item) => (
                                 <div
                                     key={item._id}
-                                    className="flex-[0_0_25%] px-2 box-border"
-                                >
+                                    className="
+                                      flex-[0_0_85%]
+                                      sm:flex-[0_0_50%]
+                                      md:flex-[0_0_33.333%]
+                                      lg:flex-[0_0_25%]
+                                      px-2
+                                      box-border
+                                    "
+                                                                    >
                                     <Link to={`/product/${item.slug || item._id}`}>
-                                        <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-[400px]">
+                                        
+                   <div className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col h-[340px] md:h-[400px]">
 
 
 
-
-                                            <div className="relative h-[240px] p-4 overflow-hidden">
+                                            <div className="relative h-[180px] md:h-[240px] p-4 overflow-hidden">
 
                                                 {/* SALE BADGE */}
                                                 {item.sale && (
