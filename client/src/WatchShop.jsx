@@ -55,24 +55,32 @@ const WatchShop = () => {
 
   return (
     <div className=''>
-      <div className='heading_WatchShop m-9'>
-        <p className="text-[rgb(87, 100, 52)] font-normal text-[23px] font-['Montserrat',sans-serif]">
+      <div className='heading_WatchShop px-4 md:px-8 my-6'>
+        <p className="text-[rgb(87, 100, 52)] font-normal text-[18px] md:text-[23px] font-['Montserrat',sans-serif]">
           Watch & Shop Now
         </p>
       </div>
 
-      <div className='video_section flex flex-wrap items-start gap-4 justify-center'>
+      <div className='video_section flex flex-wrap justify-center gap-3 md:gap-4 px-2 md:px-6'>
         {videos.map((video, index) => (
           <div key={index}
             onClick={() => setActiveVideo(video)}
-            className=" w-[240px] bg-white rounded-[6px] border border-[rgba(203,203,203,0.5)]
-           shadow-[0_4px_8px_rgba(0,0,0,0.2)]
-           transition-all duration-300
-           hover:-translate-y-1 hover:scale-105
-           hover:shadow-[0_8px_16px_rgba(0,0,0,0.25)] pb-4 cursor-pointer">
+            className="
+                    w-[47%]
+                    sm:w-[220px]
+                    md:w-[230px]
+                    lg:w-[240px]
+                    bg-white rounded-[6px]
+                    border border-[rgba(203,203,203,0.5)]
+                    shadow-[0_4px_8px_rgba(0,0,0,0.2)]
+                    transition-all duration-300
+                    md:hover:-translate-y-1 md:hover:scale-105
+                    hover:shadow-[0_8px_16px_rgba(0,0,0,0.25)]
+                    pb-4 cursor-pointer
+                    ">
 
             {/* Video */}
-            <div className="relative h-[330px] rounded-lg overflow-hidden rounded-t-[6px]">
+            <div className="relative h-[250px] sm:h-[300px] md:h-[330px] rounded-lg overflow-hidden rounded-t-[6px]">
               <video
                 className="w-full h-full object-cover"
                 autoPlay
@@ -156,7 +164,7 @@ const WatchShop = () => {
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
 
           {/* Modal Box */}
-          <div className="relative w-[320px] md:w-[300px] bg-white rounded-xl overflow-hidden">
+          <div className="relative w-[92vw] max-w-[320px] bg-white rounded-xl overflow-hidden">
 
             {/* ❌ CLOSE BUTTON (ADD THIS BACK) */}
             <button
@@ -167,7 +175,7 @@ const WatchShop = () => {
             </button>
 
             {/* VIDEO CONTAINER */}
-            <div className="relative w-full h-[500px]">
+            <div className="relative w-full h-[70vh] max-h-[600px]">
 
               <video
                 className="w-full h-full object-cover"
