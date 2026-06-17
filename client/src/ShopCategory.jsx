@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const PrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute -left-10 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
+    className="absolute -left-8 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
   >
     ‹
   </button>
@@ -17,7 +17,7 @@ const PrevArrow = ({ onClick }) => (
 const NextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute -right-10 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
+    className="absolute -right-8 top-1/2 -translate-y-1/2 z-50 text-4xl bg-white"
   >
     ›
   </button>
@@ -36,7 +36,7 @@ const settings = {
     width < 768 ? 2 :
     width < 1200 ? 3 :
     5,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   arrows: true,
   prevArrow: <PrevArrow />,
   nextArrow: <NextArrow />,
