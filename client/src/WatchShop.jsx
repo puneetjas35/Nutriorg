@@ -61,16 +61,15 @@ const WatchShop = () => {
         </p>
       </div>
 
-      <div className='video_section flex flex-wrap justify-center gap-3 md:gap-4 px-2 md:px-6'>
+      <div className='video_section flex flex-wrap justify-center gap-3 md:gap-4 px-2 md:px-4 lg:px-6'>
         {videos.map((video, index) => (
           <div key={index}
             onClick={() => setActiveVideo(video)}
             className="
-                    w-[47%]
-                    sm:w-[220px]
-                    md:w-[230px]
+                    w-[48%]
+                    md:w-[31%]
                     lg:w-[240px]
-                    bg-white rounded-[6px]
+                     bg-white rounded-[6px]
                     border border-[rgba(203,203,203,0.5)]
                     shadow-[0_4px_8px_rgba(0,0,0,0.2)]
                     transition-all duration-300
