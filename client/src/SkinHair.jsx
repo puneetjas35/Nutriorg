@@ -112,7 +112,7 @@ const SkinHair = () => {
         });
 
     return (
-        <section className="skincare bg-[rgb(244,242,233)] pb-8">
+        <section className="skincare bg-[rgb(244,242,233)] pb-8 mt-10">
             {/* Heading */}
            <div className="heading px-4 md:px-6 py-2 md:py-4 flex items-center justify-between">
                 <h2 className="text-[18px] md:text-[24px] font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
