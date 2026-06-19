@@ -61,7 +61,7 @@ const DetoxSection = () => {
             </div>
 
             {/* Swiper */}
-            <div className="relative w-full px-2 sm:px-4">
+            <div className="relative w-full px-2 sm:px-4 overflow-visible">
 
 
                 <Swiper
