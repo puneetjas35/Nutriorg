@@ -22,36 +22,31 @@
 .shop-category-slider .slick-list {
   margin: 0 -8px;
 }
-.swiper-button-prev,
-.swiper-button-next {
-  display: flex !important;
-  width: 36px !important;
-  height: 36px !important;
-  background: white;
-  border-radius: 9999px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 14px !important;
-  color: #6a5b5c;
-}
-
 @media (max-width: 1024px) {
-  .swiper-button-prev {
-    left: -8px !important;
-  }
-
-  .swiper-button-next {
-    right: -8px !important;
-  }
-}
-
-@media (max-width: 639px) {
   .swiper-button-prev,
   .swiper-button-next {
-    display: none !important;
+    display: flex !important;
+    width: 32px !important;
+    height: 32px !important;
+    background: white !important;
+    border-radius: 50% !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 999 !important;
+  }
+
+  .swiper-button-prev {
+    left: 4px !important;
+  }
+
+  .swiper-button-next {
+    right: 4px !important;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 14px !important;
+    color: #6a5b5c !important;
+    font-weight: 700;
   }
 }
 @keyframes logo-spin {
