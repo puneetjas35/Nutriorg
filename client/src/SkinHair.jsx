@@ -135,17 +135,17 @@ const SkinHair = () => {
                 {/* Left Arrow */}
                 <button
                       onClick={() => emblaApi?.scrollPrev()}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center text-[#6a5b5c] w-10 h-10 rounded-full bg-white shadow-lg"
+                    className="absolute left-[-12px] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center text-[#6a5b5c] w-10 h-10 rounded-full bg-white shadow-lg"
                     >
-                    <ChevronLeft size={36} strokeWidth={1.5} className="text-[#8b8081]" />
+                    <ChevronLeft size={24} strokeWidth={1.5} className="text-[#8b8081]" />
                 </button>
 
                 {/* Right Arrow */}
                 <button
                     onClick={() => emblaApi?.scrollNext()}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center text-[#6a5b5c] w-10 h-10 rounded-full bg-white shadow-lg"
+                    className="absolute right-[-12px] top-1/2 -translate-y-1/2 z-10 flex items-center justify-center text-[#6a5b5c] w-10 h-10 rounded-full bg-white shadow-lg"
                 >
-                    <ChevronRight size={36} strokeWidth={1.5} className="text-[#8b8081]"/>
+                    <ChevronRight size={24} strokeWidth={1.5} className="text-[#8b8081]"/>
                 </button>
 
                 {/* Embla Viewport */}
