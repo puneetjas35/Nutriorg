@@ -22,7 +22,7 @@ const NextArrow = ({ onClick }) => (
     ›
   </button>
 
-
+);
 
 
 const ShopCategory = () => {
