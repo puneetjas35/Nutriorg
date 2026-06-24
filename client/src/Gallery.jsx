@@ -43,7 +43,7 @@ const Gallery = () => {
                 </div>
             </div>
             
-          <section className="border-t border-gray-200 pt-12">
+          <section className="border-t border-gray-200">
            <div className="main_gallery_text_consultation
                             flex flex-col md:flex-row items-center
                            max-w-[1180px] mx-auto mt-16 px-4 sm:px-6 py-10 bg-white rounded-xl shadow-sm">
