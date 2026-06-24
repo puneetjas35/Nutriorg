@@ -82,7 +82,7 @@ const ProductCard = ({ item }) => {
           </div>
         </div>
 
-      {item.variants && (
+      /* {item.variants && (
         <div className="m-3">
             <select
             className="w-full px-[5px] py-[5px] text-xs border-0 rounded-[4px] bg-[#f3f3f5] cursor-pointer"
@@ -101,7 +101,7 @@ const ProductCard = ({ item }) => {
               ))}
             </select>
           </div>
-        )} 
+        )}  */
 
         {/* <button className="mx-3 mb-3 bg-[#7ba428] text-white py-2 rounded">
           Add to Cart
