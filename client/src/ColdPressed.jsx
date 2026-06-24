@@ -8,9 +8,9 @@ import AddToCartButton from "./AddToCartButton";
 
 /* ------------------ PRODUCT CARD ------------------ */
 const ProductCard = ({ item }) => {
-  // const [selectedVariant, setSelectedVariant] = useState(
-  //   item.variants ? item.variants[0] : null
-  // );
+  const [selectedVariant, setSelectedVariant] = useState(
+    item.variants ? item.variants[0] : null
+  );
 
   return (
     <div className="flex-[0_0_25%] px-2 box-border">
@@ -82,26 +82,7 @@ const ProductCard = ({ item }) => {
           </div>
         </div>
 
-      /* {item.variants && (
-        <div className="m-3">
-            <select
-            className="w-full px-[5px] py-[5px] text-xs border-0 rounded-[4px] bg-[#f3f3f5] cursor-pointer"
-
-              value={selectedVariant?.label}
-               onChange={(e) =>
-                setSelectedVariant(
-                item.variants.find(v => v.label === e.target.value)
-                )
-             }
-            >
-              {item.variants.map((variant, i) => (
-                <option key={i} value={variant.label}>
-                {variant.label}
-                </option>
-              ))}
-            </select>
-          </div>
-        )}  */
+      
 
         {/* <button className="mx-3 mb-3 bg-[#7ba428] text-white py-2 rounded">
           Add to Cart
