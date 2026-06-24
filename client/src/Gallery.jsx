@@ -7,7 +7,7 @@ const Gallery = () => {
     return (
         <div className='main_Gallery_Sectionn mt-10'>
             <div className='image_configure flex flex-col sm:flex-row flex-wrap justify-center gap-6 items-center'>
-                <div className='outerWrapper w-full md:w-[31%] h-[260px] sm:h-[367px] relative overflow-hidden group'>
+                <div className='outerWrapper w-full sm:w-[90%] md:w-[31%] h-[260px] sm:h-[367px] relative overflow-hidden group'>
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/Our_Story_1080x.jpg?v=1647066251" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
@@ -18,7 +18,7 @@ const Gallery = () => {
                     </div>
 
                 </div>
-                <div className='outerWrapper w-full md:w-[31%] h-[260px] sm:h-[367px] relative overflow-hidden group'>
+                <div className='outerWrapper w-full sm:w-[90%] md:w-[31%] h-[260px] sm:h-[367px] relative overflow-hidden group'>
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/empowering_14bdabe7-e635-4a2d-adda-263dbdf1475c.png?v=1664125247" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
@@ -30,7 +30,7 @@ const Gallery = () => {
 
                 </div>
 
-                <div className='outerWrapper w-full md:w-[31%] h-[260px] sm:h-[367px] relative overflow-hidden group'>
+                <div className='outerWrapper w-full sm:w-[90%] md:w-[31%] h-[260px] sm:h-[367px] relative overflow-hidden group'>
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/our_Farms_1512x.jpg?v=1647066280" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
@@ -49,7 +49,7 @@ const Gallery = () => {
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
                 
                       {/* Left */}
-                      <div className="lg:max-w-[550px]">
+                      <div className="lg:max-w-[550px] text-center lg:text-left">
                         <h2 className="text-4xl font-semibold text-[#446408] mb-4">
                           Get Free Consultation
                         </h2>
@@ -61,7 +61,8 @@ const Gallery = () => {
                 
                         <button
                           onClick={() => navigate("/consultation")}
-                          className="bg-[#5c8018] text-white px-8 py-4 rounded-full font-medium hover:bg-[#4e6f14] transition"
+                          className="bg-[#5c8018] text-white px-8 py-4 rounded-full font-medium hover:bg-[#4e6f14] transition mx-auto
+                                        lg:mx-0 block"
                         >
                           Book Consultation
                         </button>
@@ -72,7 +73,7 @@ const Gallery = () => {
                         <img
                           src="https://nutriorg.com/cdn/shop/files/Ditesion.png?v=1647061394"
                           alt=""
-                          className="w-[420px]"
+                          className="w-[260px] sm:w-[320px] lg:w-[420px]"
                         />
                       </div>
                 
