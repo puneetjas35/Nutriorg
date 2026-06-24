@@ -146,8 +146,8 @@ const ColdPressed = () => {
     <section className="ColdPress bg-[rgb(244,242,233)] pb-8">
 
       {/* HEADING */}
-      <div className="heading m-6 flex items-center justify-between leading-[1.4em]">
-        <h2 className="text-[24px] ml-7 mt-6 font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
+      <div className="heading mx-3 sm:mx-6 my-6 flex items-center justify-between leading-[1.4em]">
+        <h2 className="text-[18px] sm:text-[20px] lg:text-[24px] ml-3 sm:ml-7 mt-6 font-semibold uppercase tracking-normal text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
           <span className="font-['Montserrat',sans-serif]">Cold-Pressed Oils</span>
         </h2>
       </div>
@@ -158,21 +158,21 @@ const ColdPressed = () => {
         {/* LEFT ARROW */}
         <button
           onClick={() => emblaApi?.scrollPrev()}
-          className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
+         className="absolute left-1 sm:left-2 md:-left-5 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
         >
-          <ChevronLeft size={36} />
+          <ChevronLeft className="w-7 h-7 sm:w-9 sm:h-9" />
         </button>
 
         {/* RIGHT ARROW */}
         <button
           onClick={() => emblaApi?.scrollNext()}
-          className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
+          className="absolute right-1 sm:right-2 md:-right-5 top-1/2 -translate-y-1/2 z-10 text-[#6a5b5c]"
         >
-          <ChevronRight size={36} />
+          <ChevronRight className="w-7 h-7 sm:w-9 sm:h-9" />
         </button>
 
         {/* VIEWPORT */}
-        <div className="max-w-[1280px] mx-auto px-6">
+        <div className="max-w-[1280px] mx-auto px-2 sm:px-4 lg:px-6">
           <div ref={emblaRef} className="overflow-hidden">
             <div className="flex">
               {products.map((item) => (
