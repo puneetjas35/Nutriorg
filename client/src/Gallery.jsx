@@ -43,7 +43,7 @@ const Gallery = () => {
                 </div>
             </div>
             
-                      <section className="mt-16 bg-[#f6f9ef]">
+                      <section className="mt-8 bg-[#f6f9ef]">
                   <div className="max-w-[1180px] mx-auto px-6 py-16">
                 
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
