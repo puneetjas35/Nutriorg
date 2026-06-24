@@ -6,8 +6,8 @@ const Gallery = () => {
     const navigate = useNavigate();
     return (
         <div className='main_Gallery_Sectionn mt-10'>
-            <div className='image_configure flex justify-evenly items-center'>
-                <div className='outerWrapper h-[367px] w-[323px] relative overflow-hidden group'>
+            <div className='image_configure flex flex-col sm:flex-row flex-wrap justify-center gap-6 items-center'>
+                <div className='outerWrapper w-full sm:w-[323px] h-[260px] sm:h-[367px] relative overflow-hidden group'>
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/Our_Story_1080x.jpg?v=1647066251" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
@@ -18,7 +18,7 @@ const Gallery = () => {
                     </div>
 
                 </div>
-                <div className='outerWrapper h-[367px] w-[323px] relative overflow-hidden group'>
+                <div className='outerWrapper w-full sm:w-[323px] h-[260px] sm:h-[367px] relative overflow-hidden group'>
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/empowering_14bdabe7-e635-4a2d-adda-263dbdf1475c.png?v=1664125247" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
@@ -30,7 +30,7 @@ const Gallery = () => {
 
                 </div>
 
-                <div className='outerWrapper relative h-[367px] w-[441px] overflow-hidden group'>
+                <div className='outerWrapper w-full sm:w-[323px] h-[260px] sm:h-[367px] relative overflow-hidden group'>
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/our_Farms_1512x.jpg?v=1647066280" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
@@ -43,20 +43,17 @@ const Gallery = () => {
                 </div>
             </div>
 
-            <div className="main_gallery_text_consultation
-                flex items-center
-                max-w-[1180px] mx-auto
-                mt-16 px-6  h-[450px]">
+            <div className="main_gallery_text_consultation flex flex-col md:flex-row items-center max-w-[1180px] mx-auto mt-16 px-4 md:px-6 py-10 md:h-[450px]">
 
                 {/* LEFT CONTENT */}
-                <div className="w-[70%] flex flex-col justify-center
+                <div className="w-full md:w-[70%] flex flex-col justify-center
                   leading-[1.6em] mr-0 text-[rgb(161,142,150)]">
 
-                    <h2 className="text-[25px] font-semibold mb-5 font-['Montserrat', sans-serif]">
+                    <h2 className="text-[20px] sm:text-[25px] font-semibold mb-5 font-['Montserrat', sans-serif]">
                         Get Free Consultation!!
                     </h2>
 
-                    <p className="text-[16px] font-normal font-['Montserrat',sans-serif] mb-6">
+                    <p className="text-[14px] sm:text-[16px] font-normal font-['Montserrat',sans-serif] mb-6">
                         Connect with our Dietitian for a free consultation.<br />
                         Fill out this form and book a free appointment now!
                     </p>
@@ -64,7 +61,7 @@ const Gallery = () => {
                     <button
                         onClick={() => navigate("/consultation")}
                         className="inline-block w-full max-w-[750px]
-                 bg-[#5c8018] text-white text-[18px] font-medium
+                 bg-[#5c8018] text-white text-[16px] sm:text-[18px] font-medium
                  py-2 px-10 text-center
                  rounded-sm border-2 border-[#5c8018]
                  hover:bg-[#4e6f14] transition-all duration-300"
@@ -75,8 +72,8 @@ const Gallery = () => {
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <div className="w-[30%] flex justify-end flex-shrink-0 h-full mb-14">
-                    <div className="w-[360px] h-full overflow-hidden">
+                <div className="w-full md:w-[30%] flex justify-center md:justify-end mt-6 md:mt-0 flex justify-end flex-shrink-0 h-full mb-14">
+                    <div className="w-[240px] sm:w-[300px] md:w-[360px] h-auto overflow-hidden">
                         <img
                             className="h-full w-auto object-cover rounded-sm"
                             src="https://nutriorg.com/cdn/shop/files/Ditesion.png?v=1647061394"
