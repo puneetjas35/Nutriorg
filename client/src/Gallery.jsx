@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate, Link } from "react-router-dom";
-import Ourcontributions from './pages/Ourcontributions';
+
 
 const Gallery = () => {
     const navigate = useNavigate();
@@ -42,12 +42,14 @@ const Gallery = () => {
 
                 </div>
             </div>
-
-            <div className="main_gallery_text_consultation flex flex-col md:flex-row items-center max-w-[1180px] mx-auto mt-16 px-4 md:px-6 py-10 md:h-[450px]">
+            
+          <section className="border-t border-gray-200 pt-12">
+           <div className="main_gallery_text_consultation
+                            flex flex-col md:flex-row items-center
+                           max-w-[1180px] mx-auto mt-16 px-4 sm:px-6 py-10">
 
                 {/* LEFT CONTENT */}
-                <div className="w-full md:w-[70%] flex flex-col justify-center
-                  leading-[1.6em] mr-0 text-[rgb(161,142,150)]">
+                <div className="<div className="w-full md:w-[70%] flex flex-col justify-center text-center md:text-left leading-[1.6em] text-[rgb(161,142,150)]">
 
                     <h2 className="text-[20px] sm:text-[25px] font-semibold mb-5 font-['Montserrat',sans-serif]">
                         Get Free Consultation!!
@@ -60,19 +62,23 @@ const Gallery = () => {
 
                     <button
                         onClick={() => navigate("/consultation")}
-                        className="inline-block w-full max-w-[750px]
-                 bg-[#5c8018] text-white text-[16px] sm:text-[18px] font-medium
-                 py-2 px-10 text-center
-                 rounded-sm border-2 border-[#5c8018]
-                 hover:bg-[#4e6f14] transition-all duration-300"
-                    >
+                        className="
+                                w-full md:w-auto
+                                bg-[#5c8018]
+                                text-white
+                                px-10 py-3
+                                font-medium
+                                rounded-md
+                                hover:bg-[#4e6f14]
+                                transition-all duration-300"
+                         >
                         Click Here
                     </button>
 
                 </div>
 
                 {/* RIGHT IMAGE */}
-               <div className="w-full md:w-[30%] flex justify-center md:justify-end mt-6 md:mt-0 flex-shrink-0 h-full mb-14">
+               <div className="w-full md:w-[30%] flex justify-center md:justify-end mt-6 md:mt-0 flex-shrink-0">
                     <div className="w-[240px] sm:w-[300px] md:w-[360px]">
                         <img
                             className="h-full w-auto object-cover rounded-sm"
@@ -83,6 +89,7 @@ const Gallery = () => {
                 </div>
 
             </div>
+          </section>
 
         </div>
     )
