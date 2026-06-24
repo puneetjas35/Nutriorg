@@ -11,7 +11,7 @@ const Gallery = () => {
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/Our_Story_1080x.jpg?v=1647066251" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
-                            <p className='text-[#446408] text-[20px] font-["Montserrat", sans-serif] font-medium tracking-wide mb-2 leading-[1.4em]'>Our Story</p>
+                            <p className='text-[#446408] text-[20px] font-["Montserrat",sans-serif] font-medium tracking-wide mb-2 leading-[1.4em]'>Our Story</p>
                             <a className="text-[#446408] text-[1em] font-normal underline " href="/OurStory">Read More</a>
                         </div>
 
@@ -22,7 +22,7 @@ const Gallery = () => {
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/empowering_14bdabe7-e635-4a2d-adda-263dbdf1475c.png?v=1664125247" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
-                            <p className='text-[#446408] text-[20px] font-["Montserrat", sans-serif] font-medium tracking-wide mb-2 leading-[1.4em]'>Our<br></br> Contributions</p>
+                            <p className='text-[#446408] text-[20px] font-["Montserrat",sans-serif] font-medium tracking-wide mb-2 leading-[1.4em]'>Our<br></br> Contributions</p>
                             <Link className="text-[#446408] text-[1em] font-normal underline " to="/ourcontributions">Read More</Link>
                         </div>
 
@@ -34,7 +34,7 @@ const Gallery = () => {
                     <img className='w-full h-full object-cover' src="https://nutriorg.com/cdn/shop/files/our_Farms_1512x.jpg?v=1647066280" alt="" />
                     <div className='innerWrapper absolute inset-0 flex items-center justify-center'>
                         <div className='feature-subheader bg-[#eaeaea]/90 px-8 py-6 text-center'>
-                            <p className='text-[#446408] text-[20px] font-["Montserrat", sans-serif] font-medium tracking-wide mb-2 leading-[1.4em]'>Our Farms</p>
+                            <p className='text-[#446408] text-[20px] font-["Montserrat",sans-serif] font-medium tracking-wide mb-2 leading-[1.4em]'>Our Farms</p>
                             <Link className="text-[#446408] text-[1em] font-normal underline " to="/ourvalues">Read More</Link>
                         </div>
 
@@ -49,7 +49,7 @@ const Gallery = () => {
                 <div className="w-full md:w-[70%] flex flex-col justify-center
                   leading-[1.6em] mr-0 text-[rgb(161,142,150)]">
 
-                    <h2 className="text-[20px] sm:text-[25px] font-semibold mb-5 font-['Montserrat', sans-serif]">
+                    <h2 className="text-[20px] sm:text-[25px] font-semibold mb-5 font-['Montserrat',sans-serif]">
                         Get Free Consultation!!
                     </h2>
 
@@ -72,8 +72,8 @@ const Gallery = () => {
                 </div>
 
                 {/* RIGHT IMAGE */}
-                <div className="w-full md:w-[30%] flex justify-center md:justify-end mt-6 md:mt-0 flex justify-end flex-shrink-0 h-full mb-14">
-                    <div className="w-[240px] sm:w-[300px] md:w-[360px] h-auto overflow-hidden">
+               <div className="w-full md:w-[30%] flex justify-center md:justify-end mt-6 md:mt-0 flex-shrink-0 h-full mb-14">
+                    <div className="w-[240px] sm:w-[300px] md:w-[360px]">
                         <img
                             className="h-full w-auto object-cover rounded-sm"
                             src="https://nutriorg.com/cdn/shop/files/Ditesion.png?v=1647061394"
