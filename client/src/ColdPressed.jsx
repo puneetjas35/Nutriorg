@@ -62,15 +62,15 @@ const ProductCard = ({ item }) => {
 
               {(selectedVariant?.mrp || item.mrp) && (
                 <div className="text-[11px]">
-                  <span className="line-through text-gray-400">
+                  <span className="line-through text-gray-400 block">
                     ₹{Number(selectedVariant?.mrp || item.mrp).toFixed(2)}
                   </span>
-                  {item.discount && (
-                    <span className="ml-1 border border-green-700 text-green-700 px-1 rounded">
+                 {item.discount && (
+                    <span className="inline-block mt-1 border border-green-700 text-green-700 px-1 rounded">
                       {item.discount}% OFF
                     </span>
-                  )}
-                </div>
+                 )}
+               </div>
               )}
             </div>
           </div>
@@ -82,26 +82,26 @@ const ProductCard = ({ item }) => {
           </div>
         </div>
 
-        {item.variants && (
-          <div className="m-3">
-            <select
-              className="w-full px-[5px] py-[5px] text-xs border-0 rounded-[4px] bg-[#f3f3f5] cursor-pointer"
+         // {item.variants && (
+        //  <div className="m-3">
+          //  <select
+          //    className="w-full px-[5px] py-[5px] text-xs border-0 rounded-[4px] bg-[#f3f3f5] cursor-pointer"
 
-              value={selectedVariant?.label}
-              onChange={(e) =>
-                setSelectedVariant(
-                  item.variants.find(v => v.label === e.target.value)
-                )
-              }
-            >
-              {item.variants.map((variant, i) => (
-                <option key={i} value={variant.label}>
-                  {variant.label}
-                </option>
-              ))}
-            </select>
-          </div>
-        )}
+            //  value={selectedVariant?.label}
+            //  onChange={(e) =>
+              //  setSelectedVariant(
+                //  item.variants.find(v => v.label === e.target.value)
+              //  )
+            //  }
+           // >
+             // {item.variants.map((variant, i) => (
+               // <option key={i} value={variant.label}>
+                 // {variant.label}
+              //  </option>
+             // ))}
+           // </select>
+         // </div>
+       // )} 
 
         {/* <button className="mx-3 mb-3 bg-[#7ba428] text-white py-2 rounded">
           Add to Cart
