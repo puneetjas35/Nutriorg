@@ -45,8 +45,9 @@ const Gallery = () => {
             
           <section className="border-t border-gray-200">
            <div className="main_gallery_text_consultation
-                            flex flex-col md:flex-row items-center
-                           max-w-[1180px] mx-auto mt-8 px-4 sm:px-6 py-10 bg-white rounded-xl shadow-sm">
+                    flex flex-col md:flex-row items-center
+                    justify-between gap-12 lg:gap-20
+                    max-w-[1180px] mx-auto mt-8 px-4 sm:px-6 py-10 bg-white rounded-xl shadow-sm">
 
                 {/* LEFT CONTENT */}
                 <div className="w-full md:w-[70%] flex flex-col justify-center text-center md:text-left leading-[1.6em] text-[rgb(161,142,150)]">
