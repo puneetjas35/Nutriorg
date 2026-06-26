@@ -2,9 +2,9 @@ import React from 'react'
 
 const NewsBlog = () => {
     return (
-        <div className="main_news_section bg-[#f4f2e9]  py-8 md:py-12">
+        <div className="main_news_section bg-[#f4f2e9]  py-4 md:py-6">
             {/* Heading */}
-            <div className="heading px-4 sm:px-6 md:px-10 lg:px-16 py-6 md:py-10 flex items-center justify-between">
+            <div className="heading px-4 sm:px-6 md:px-10 lg:px-16 pt-6 pb-3 md:pt-8 md:pb-4 flex items-center justify-between">
                     <h2 className="text-lg sm:text-xl md:text-2xl font-semibold uppercase text-[#9A8F96] hover:text-[#6a5b5c] transition-colors duration-300">
                         <a href="#" className="font-[Montserrat,sans-serif]">
                             NEWS & BLOG
@@ -20,7 +20,7 @@ const NewsBlog = () => {
                 </div>
 
             {/* CONTENT */}
-            <div className="news_content max-w-[1180px] mx-auto px-4 sm:px-6 py-8 md:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <div className="news_content max-w-[1180px] mx-auto mx-auto px-4 sm:px-6 pt-2 pb-8 md:pb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
                 {/* FIRST NEWS IMAGE AND CONTENT */} 
                <div className="firstcontent flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 h-full">
