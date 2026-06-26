@@ -42,7 +42,7 @@ const Footer = ({ scrollToSearch }) => {
         </div>
       </div>
 
-      <div className="LogoText max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div className="LogoText max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
         <div className="LogoColumn flex justify-center lg:justify-start">
           <a href="">
             <img className='h-12 w-auto max-w-full h-12 block flex-none' src="https://nutriorg.com/cdn/shop/files/logos_-_Copy_90d33648-a865-459e-ac93-e7f7d8dab71c_500x.png?v=1614320101" alt="nutriorg logo" />
