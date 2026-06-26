@@ -32,37 +32,37 @@ const Footer = ({ scrollToSearch }) => {
         </div>
         <div className='social_icons'>
           <ul className="flex justify-center gap-4 text-xl">
-            <li><a href="" className="transition-colors duration-300 hover:text-[#5c8018]"><FaSquareFacebook /></a></li>
-            <li><a href="" className="transition-colors duration-300 hover:text-[#5c8018]"><FaYoutube /></a></li>
-            <li><a href="" className="transition-colors duration-300 hover:text-[#5c8018]"><FaInstagram /></a></li>
-            <li><a href="" className="transition-colors duration-300 hover:text-[#5c8018]"><FaPinterest /></a></li>
-            <li><a href="" className="transition-colors duration-300 hover:text-[#5c8018]"><AiOutlineLinkedin /></a></li>
+            <li><a href="/" className="transition-colors duration-300 hover:text-[#5c8018]"><FaSquareFacebook /></a></li>
+            <li><a href="/" className="transition-colors duration-300 hover:text-[#5c8018]"><FaYoutube /></a></li>
+            <li><a href="/" className="transition-colors duration-300 hover:text-[#5c8018]"><FaInstagram /></a></li>
+            <li><a href="/" className="transition-colors duration-300 hover:text-[#5c8018]"><FaPinterest /></a></li>
+            <li><a href="/" className="transition-colors duration-300 hover:text-[#5c8018]"><AiOutlineLinkedin /></a></li>
           </ul>
 
         </div>
       </div>
 
-      <div className="LogoText max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-        <div className="LogoColumn flex justify-center lg:justify-start">
+     <div className="LogoText max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 py-8 flex flex-wrap justify-between gap-y-8">
+        <div className="LogoColumn w-full sm:w-[120px] flex justify-center lg:justify-start">
           <a href="">
-            <img className='h-12 w-auto max-w-full h-12 block flex-none' src="https://nutriorg.com/cdn/shop/files/logos_-_Copy_90d33648-a865-459e-ac93-e7f7d8dab71c_500x.png?v=1614320101" alt="nutriorg logo" />
+            <img className='w-auto max-w-full h-12 block flex-none' src="https://nutriorg.com/cdn/shop/files/logos_-_Copy_90d33648-a865-459e-ac93-e7f7d8dab71c_500x.png?v=1614320101" alt="nutriorg logo" />
           </a>
         </div>
-        <div className="text_second_column md:col-span-2 lg:col-span-2 text-start">
-          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat', sans-serif] font-normal break-words leading-[1.55em]">If It's Organic & Pure, It's NutriOrg. </p>
-          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat', sans-serif] space-y-3 font-normal break-words leading-[1.55em]">Marketed By - Ananta Svastha Pvt. Ltd, Basement, Plot 35-36, Tilak Vihar B, Near cafe 206 Gokulpura Kalwar Road Jhotwara Jaipur Rajasthan- 302012</p>
-          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat', sans-serif] font-normal break-words leading-[1.55em]">
+        <div className="text_second_column w-full lg:w-[38%] text-start">
+          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat',sans-serif] font-normal break-words leading-[1.55em]">If It's Organic & Pure, It's NutriOrg. </p>
+          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat',sans-serif] space-y-3 font-normal break-words leading-[1.55em]">Marketed By - Ananta Svastha Pvt. Ltd, Basement, Plot 35-36, Tilak Vihar B, Near cafe 206 Gokulpura Kalwar Road Jhotwara Jaipur Rajasthan- 302012</p>
+          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat',sans-serif] font-normal break-words leading-[1.55em]">
             <br />
             Manufactured By- Rattan Organic Foods Pvt. Ltd, Plot NO 35&36, Tilak Vihar B, Near Cafe 206 Gokulpura Kalwar Road Jhotwara Jaipur Rajasthan- 302012
           </p>
-          <p className="text-[#2c2528]text-sm sm:text-base font-['Montserrat', sans-serif] font-normal break-words leading-[1.55em]"><br />
+          <p className="text-[#2c2528] text-sm sm:text-base font-['Montserrat',sans-serif] font-normal break-words leading-[1.55em]"><br />
             Email : sales@nutriorg.com
             <br />
             Phone: +91 9119105555
           </p>
 
         </div>
-        <div className='text_third_column text-start'>
+       <div className="text-third-column w-[45%] sm:w-[30%] lg:w-[14%] text-start">
           <ul className='space-y-2 text-sm sm:text-base px-3'>
             <li> <button onClick={scrollToSearch} className="cursor-pointer">
               Search
@@ -73,7 +73,7 @@ const Footer = ({ scrollToSearch }) => {
             <li><Link className="hover:text-[#5c8018] transition-colors duration-300" to="/terms">Terms of Service</Link></li>
           </ul>
         </div>
-        <div className='text_fourth_column text-start'>
+        <div className="text-fourth-column w-[45%] sm:w-[30%] lg:w-[14%] text-start">
           <ul className="space-y-2 text-sm sm:text-base px-3">
             <li><Link className="hover:text-[#5c8018] transition-colors duration-300" to="/about">About us</Link></li>
             <li><Link className="hover:text-[#5c8018] transition-colors duration-300" to="/ourstory">Brand Story</Link></li>
@@ -83,7 +83,7 @@ const Footer = ({ scrollToSearch }) => {
             <li><Link className="hover:text-[#5c8018] transition-colors duration-300" to="/ourcontributions">Our <br />Contributions</Link></li>
           </ul>
         </div>
-        <div className='text_fifth_column text-start'>
+        <div className="text-fifth-column w-[45%] sm:w-[30%] lg:w-[14%] text-start">
           <ul className="space-y-2 text-sm sm:text-base px-3">
             <li><Link className="hover:text-[#5c8018] transition-colors duration-300" to="/privacypolicy">Privacy Policy</Link></li>
             <li><Link className="hover:text-[#5c8018] transition-colors duration-300" to="/return">Returns & <br />Exchanges</Link></li>
