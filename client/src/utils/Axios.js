@@ -13,7 +13,7 @@ Axios.interceptors.request.use(
         const accessToken = localStorage.getItem('accesstoken')
 
         if(accessToken){
-            config.headers.Authorization = `Bearer ${accesstoken}`
+            config.headers.Authorization = `Bearer ${accessToken}`
         }
 
         return config
