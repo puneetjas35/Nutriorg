@@ -68,11 +68,15 @@ function App() {
   const location = useLocation()
 
 
-  const fetchUser = async () => {
+const fetchUser = async () => {
+  try {
     const userData = await fetchUserDetails()
     dispatch(setUserDetails(userData.data.data))
+  } catch (error) {
+    console.log(error)
+    localStorage.removeItem("accesstoken")
   }
-
+}
 
 
   useEffect(() => {
